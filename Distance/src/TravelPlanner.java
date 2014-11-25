@@ -1,7 +1,10 @@
 /*
+ * TravelPlanner.java
+ * 
  * Computes and outputs travel time given speed and distance
  * Nathan Lowe - 2014/11/25
  * 
+ * Taken from example presented in EECS1000
  */
 
 import java.util.*;
@@ -25,6 +28,6 @@ public class TravelPlanner
 		System.out.println("At " + speed + " mph, it will take " + time);
 		System.out.println(" hours to travel " + distance + " miles.");
 		
-		//inp.close(); //Fix Warning: Resource Leak: 'inp' is never closed
+		inp.close(); //Fix Warning: Resource Leak: 'inp' is never closed
 	}
 }
